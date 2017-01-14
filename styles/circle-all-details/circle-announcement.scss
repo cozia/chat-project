@@ -1,0 +1,51 @@
+$header-line-color:#cccccc;
+$header-background:#f7f7f7;
+$content-line-color:#e0e0e0;
+$content-background:#f2f2f2;
+$header-height:38px;
+$list-height-a:70px;
+$list-height-b:44px;
+$yellow:#fe8d00;
+#circle-announcement-container{
+    height: 100%;
+    background: $content-background;
+    .gap{
+        height: $header-height;
+    }
+}
+
+#circle-announcement-card{
+    margin-top: 10px;
+    height: 250px;
+    position: relative;
+    box-sizing: border-box;
+    background: #ffffff;
+
+    #circle-announcement{
+        margin-top: 10px;
+        resize: none;
+        height: 199px;
+        background: #ffffff;
+        width: 100%;
+        border: none;
+        outline: none;
+        box-sizing: border-box;
+        padding:  0 12px;
+        font-family: "Microsoft Yahei";
+        font-size: 14px;
+        color: #333333;
+    }
+    #clear-all-words-btn{
+        display: none;
+        position: absolute;
+        right: 12px;
+        bottom: 12px;
+        border: none;
+        background: #ffffff;
+        outline: none;
+        img{
+            width: 15px;
+            height: 15px;
+        }
+    }
+}

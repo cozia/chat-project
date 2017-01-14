@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title></title>
+</head>
+<link rel="stylesheet" href="../../../styles/reset.css"/>
+<link rel="stylesheet" href="../../../styles/personal-center/circle-setting.css"/>
+<body>
+    <header id='circle-setting-header'>
+        <a>back</a>
+        <span class="circle-setting-header-text">设置</span>
+        <a>保存</a>
+    </header>
+    <form action="" id="circle-setting-container">
+        <div class="gap"></div>
+        <div class="circle-visiting-card">
+            <label for="rename-circle">圈名片  </label>
+            <input id="rename-circle" placeholder="请输入圈名片，控制在10个字以内" type="text"/>
+        </div>
+        <span class="circle-card-info">此名片只在该圈显示</span>
+        <ul class="change-enter-circle-way">
+            <input type="hidden" name="addRoomMethod" value="2"/>
+            <li><span class="change-enter-circle-way-text" >修改入圈方式</span></li>
+            <div class="circle-setting-line"></div>
+            <li class="enter-grouper-confirm"><span>需要圈主确认</span><img src="../../../images/compete.png"/></li>
+            <div class="circle-setting-line"></div>
+            <li class="enter-group-need-password"><span>重置入圈口令</span><img src="../../../images/compete.png" /></li>
+            <li><span>口令：</span><input placeholder="1234" type="number"/></li>
+        </ul>
+
+        <ul class='locationmsg-setting'>
+            <li>
+                <span>共享地理位置</span>
+                <label for="location-id" class='slide-button'>
+                    <input id="location-id" checked="checked" type="checkbox"/>
+                </label>
+
+            </li>
+            <div class="circle-setting-line"></div>
+            <li>
+                <span>消息置顶</span>
+                <label for="msg-top-id" class='slide-button'>
+                    <input id="msg-top-id" type="checkbox"/>
+                </label>
+
+            </li>
+        </ul>
+        <button id="empty-msg-btn">清空聊天记录</button>
+        <div id="dissolve-circle-btn"><button>解散该圈</button></div>
+    </form>
+</body>
+<script src="../../../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../../../scripts/circle-details.js"></script>
+</html>

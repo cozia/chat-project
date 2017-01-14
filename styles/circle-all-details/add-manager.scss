@@ -1,0 +1,46 @@
+/*
+circle-member-edit-header page stylesheets
+*/
+$header-line-color:#cccccc;
+$header-background:#f7f7f7;
+$content-line-color:#e0e0e0;
+$content-background:#f2f2f2;
+$header-height:38px;
+$list-height-a:70px;
+$list-height-b:44px;
+$yellow:#fe8d00;
+
+
+#current-manager-list{
+    li{
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 0 12px;
+        .current-manager-list-left{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        img{
+            height: 30px;
+            width: 30px;
+        }
+        button{
+            width: 60px;
+            height: 25px;
+            background: #e64260;
+            color: #ffffff;
+            border: none;
+            font-size: 12px;
+            border-radius: 3px;
+        }
+    }
+}
+
+
+
+

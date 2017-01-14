@@ -1,0 +1,36 @@
+/*
+photo-edit page stylesheets
+*/
+#photo-edit-header {
+  height: 38px;
+  padding: 0 12px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #f7f7f7;
+  border-color: #cccccc;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #fe8d00; }
+
+#photo-edit-container {
+  height: 100%;
+  background: #f2f2f2;
+  padding: 0 12px;
+  color: #999999; }
+  #photo-edit-container .gap {
+    height: 38px;
+    margin-bottom: 24px; }
+  #photo-edit-container ul li {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    background: #000;
+    border-radius: 10px; }
+
+/*# sourceMappingURL=photo-edit.css.map */

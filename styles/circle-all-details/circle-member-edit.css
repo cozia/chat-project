@@ -1,0 +1,79 @@
+/*
+circle-member-edit-header page stylesheets
+*/
+#circle-member-edit-container {
+  height: 100%;
+  background: #f2f2f2; }
+  #circle-member-edit-container .gap {
+    height: 38px; }
+  #circle-member-edit-container .circler-manager {
+    background: #ffffff;
+    margin-top: 10px;
+    box-sizing: border-box;
+    padding: 0 0 0 12px; }
+    #circle-member-edit-container .circler-manager .circler-manager-text {
+      height: 34px;
+      line-height: 34px;
+      font-size: 14px;
+      color: #808080;
+      padding-bottom: 10px; }
+    #circle-member-edit-container .circler-manager ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      #circle-member-edit-container .circler-manager ul li {
+        position: relative;
+        display: inline-block;
+        width: 50px;
+        margin-right: 12px; }
+        #circle-member-edit-container .circler-manager ul li #circler {
+          background: #55d2f8; }
+        #circle-member-edit-container .circler-manager ul li img {
+          border-radius: 5px; }
+        #circle-member-edit-container .circler-manager ul li span {
+          display: block;
+          width: 38px;
+          text-align: center;
+          height: 18px;
+          line-height: 18px;
+          border-radius: 2px;
+          background: #6cd9a3;
+          position: absolute;
+          font-size: 2px;
+          color: #ffffff;
+          top: -6px;
+          left: 6px; }
+        #circle-member-edit-container .circler-manager ul li .nickname {
+          font-size: 12px;
+          color: #333333;
+          display: block;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          text-align: center;
+          padding-bottom: 15px; }
+    #circle-member-edit-container .circler-manager .add-del-common {
+      width: 48px;
+      height: 48px;
+      border-radius: 5px;
+      position: relative;
+      border: 1px solid #CCCCCC; }
+      #circle-member-edit-container .circler-manager .add-del-common:before {
+        content: '';
+        position: absolute;
+        top: 22px;
+        left: 9px;
+        width: 30px;
+        height: 2px;
+        background: #CCCCCC; }
+    #circle-member-edit-container .circler-manager .add-manager:after {
+      content: '';
+      position: absolute;
+      top: 9px;
+      left: 23px;
+      width: 2px;
+      height: 30px;
+      background: #CCCCCC; }
+
+/*# sourceMappingURL=circle-member-edit.css.map */

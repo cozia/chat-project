@@ -1,0 +1,32 @@
+#new-circle-header{position:fixed;top:0;left:0;z-index:20;width:100%;height:38px;background:#f7f7f7;color:#fe8d00;border-width:0 0 1px 0;border-style:solid;border-color:#ccc}
+#new-circle-header .header-cancel{position:absolute;top:12px;left:12px}
+#new-circle-header .header-create-circle{position:absolute;top:12px;right:12px}
+#new-circle-container{width:100%;height:100%;background:#ededed}
+#new-circle-container .gap{height:38px}
+#new-circle-container .container-list{position:relative;height:70px;background:#fff}
+#new-circle-container .container-list:after{content:'';position:absolute;z-index:9;left:12px;top:70px;width:100%;height:1px;background:#e0e0e0}
+#new-circle-container .container-list .list-left{position:relative;float:left;width:50px;height:50px;margin:10px 12px}
+#new-circle-container .container-list .list-left .header-icon{width:50px;height:50px;border-radius:5px}
+#new-circle-container .container-list .list-left .header-message{background:#eb6877}
+#new-circle-container .container-list .list-left .header-message img{width:23px;height:25px;margin:12px 13px}
+#new-circle-container .container-list .list-left .msg-icon{position:absolute;right:-7px;top:-7px;width:20px;height:20px}
+#new-circle-container .container-list .list-middle{float:left}
+#new-circle-container .container-list .list-middle .middle-top{display:inline-block;font-size:15px;margin-top:13px}
+#new-circle-container .container-list .list-middle .middle-bottom{display:inline-block;font-size:13px;color:#999;margin-top:8px}
+#new-circle-container .container-list .list-right{font-size:12px;color:#999;position:absolute;right:12px;top:15px}
+#new-circle-footer{width:100%;height:50px;position:fixed;left:0;bottom:0;background:#fff;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-ms-flex-pack:distribute;justify-content:space-around;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+#new-circle-footer .footer-menu-item{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-box-align:center;-ms-flex-align:center;align-items:center;color:#999}
+#new-circle-footer .footer-menu-item .footer-icon{width:22px;height:23px}
+#new-circle-footer .footer-menu-item .footer-icon-plus{position:relative;top:-3px;width:32px;height:32px}
+.enter-circle-notice-nav{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-ms-flex-pack:distribute;justify-content:space-around;width:100%;height:100%;font-size:17px;position:absolute}
+.enter-notice-back-icon{width:8px;height:14px}
+.enter-notice-right{position:absolute;top:0;right:12px;height:70px;width:92px;text-align:center;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+.enter-notice-right button{width:40px;height:25px;font-size:12px;color:#333;border:1px solid #ccc;border-radius:3px;background:0 0}
+.enter-notice-right .enter-notice-agree{margin-right:12px}
+.enter-notice-right .enter-notice-reject{color:#eb6363}
+.information-container-list,.information-list{height:70px;padding:0 12px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;background:#fff}
+.information-container-list{color:#eb6877;margin-bottom:10px}
+.information-container-list img{width:50px;height:50px;border-radius:50%}
+.information-list{position:relative;height:44px;color:#333}
+.information-list:after{content:'';position:absolute;z-index:9;left:12px;top:44px;width:100%;height:1px;background:#e0e0e0}
+.information-list .information-right-text{font-size:13px;color:#999}

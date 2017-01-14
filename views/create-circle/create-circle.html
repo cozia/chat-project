@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<link rel="stylesheet" href="../../styles/reset.css"/>
+<link rel="stylesheet" href="../../styles/create-circle/create-circle.css"/>
+<body>
+<div id="create-step1">
+    <form action="url">
+        <header class="create-circle-header">
+            <div><img src="../../images/fanhui.png" alt="back"/></div>
+            <span> </span>
+        </header>
+        <section class="create-circle-container">
+            <div class="gap"></div>
+            <div class="create-circle-title">填写圈名称</div>
+            <div class="create-circle-subtitle">圈名称请使用文明字符，否则视为无效</div>
+            <div class="create-circle-add-circle-photo" id="img-container">
+                <img src="../../images/camera.png" alt="camera"/><br/>
+                <span>添加圈图片</span>
+                <input id="img-upload" type="file" accept="image/*"/>
+            </div>
+            <ul>
+                <li class="create-circle-list"><input class="create-circle-input" placeholder="输入圈名称，不超过10个字" type="text"/></li>
+                <li class="create-circle-list" id="enter-way">
+                    <span>入圈验证方式</span>
+                    <div>
+                        <input id="enter-way-str" readonly class="create-circle-list-ipt" />
+                        <img  class="create-circle-list-right-icon" src="../../images/right-back@2x.png" alt=""/>
+                    </div>
+                </li>
+                <li class="create-circle-list" id="choose-classify">
+                    <span>请选择圈的类别</span>
+                    <div>
+                        <input readonly class="create-circle-list-right create-circle-list-ipt" />
+                        <img  class="create-circle-list-right-icon" src="../../images/right-back@2x.png" alt=""/>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <footer id="create-circle-footer">
+            <button type="submit">提交</button>
+        </footer>
+    </form>
+</div>
+<div id="create-step3">
+    <header class="create-circle-header">
+        <span class="create-circle-header-cancel" id="create-step3-cancel">取消</span>
+        <span class="create-circle-header-makesure" id="create-step3-sure">确定</span>
+    </header>
+    <section class="create-circle-container">
+        <div class="gap"></div>
+        <div class="create-circle-title">选择圈分类</div>
+        <div class="create-circle-subtitle">选择1~3个类别，确定后无法更改</div>
+        <div class="circle-classify-details">
+            <ul id="classify-details-ul">
+                <li class="circle-classify-details-list">
+                    <span class="classify-details-item">团队</span>
+                    <span class="classify-details-item">文化</span>
+                    <span class="classify-details-item">感情</span>
+                    <span class="classify-details-item">人文</span>
+                </li>
+                <li class="circle-classify-details-list">
+                    <span class="classify-details-item">情怀</span>
+                    <span class="classify-details-item">牛人</span>
+                    <span class="classify-details-item">大咖</span>
+                    <span class="classify-details-item">达人</span>
+                </li>
+                <li class="circle-classify-details-list">
+                    <span class="classify-details-item">摄影</span>
+                    <span class="classify-details-item">运动</span>
+                    <span class="classify-details-item">时尚</span>
+                    <span class="classify-details-item">户外</span>
+                </li>
+                <li class="circle-classify-details-list">
+                    <span class="classify-details-item">科技</span>
+                    <span class="classify-details-item">娱乐</span>
+                    <span class="classify-details-item">金融</span>
+                    <span class="classify-details-item">国际</span>
+                </li>
+                <li class="circle-classify-details-list">
+                    <span class="classify-details-item">熟人</span>
+                    <span class="classify-details-item">社交</span>
+                    <span class="classify-details-item">个性</span>
+                    <span class="classify-details-item">校园</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+</div>
+<div id="create-step2">
+    <header class="create-circle-header">
+        <span class="create-circle-header-cancel" id="create-step2-cancel">取消</span>
+        <span class="create-circle-header-addgroupway">选择加群方式</span>
+        <span class="create-circle-header-makesure" id="create-step2-sure">确定</span>
+    </header>
+    <section id="enter-group-container">
+        <div class="gap"></div>
+        <div class="enter-grouper-confirm">
+            <span>需要群主确认</span>
+            <img src="../../images/compete.png" />
+        </div>
+        <form class="enter-group-form">
+            <div class="enter-group-need-password">
+                <span>需要输入加群密码</span>
+                <img src="../../images/compete.png" />
+            </div>
+            <div class="enter-group-password">
+                <span>密码：</span>
+                <input autofocus="true" type="password"/>
+            </div>
+        </form>
+    </section>
+</div>
+</body>
+<script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../../scripts/create-circle.js"></script>
+</html>

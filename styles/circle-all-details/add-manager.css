@@ -1,0 +1,28 @@
+/*
+circle-member-edit-header page stylesheets
+*/
+#current-manager-list li {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 12px; }
+  #current-manager-list li .current-manager-list-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+  #current-manager-list li img {
+    height: 30px;
+    width: 30px; }
+  #current-manager-list li button {
+    width: 60px;
+    height: 25px;
+    background: #e64260;
+    color: #ffffff;
+    border: none;
+    font-size: 12px;
+    border-radius: 3px; }
+
+/*# sourceMappingURL=add-manager.css.map */

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title></title>
+</head>
+<link rel="stylesheet" href="../../styles/reset.css"/>
+<link rel="stylesheet" href="../../styles/circle-all-details/circle-details.css"/>
+<body>
+<header class="com-header">
+    <img src="../../images/fanhui.png" alt="back"/>
+    <span>圈介绍</span>
+    <a>设置</a>
+</header>
+<section id="circle-details-container">
+    <div class="gap"></div>
+    <div class="S-carousel"
+         data-url='../../images/test/abc1.jpg,../../images/test/abc2.jpg,../../images/test/abc3.jpg,../../images/test/abc4.jpg'>
+    </div>
+
+    <div id="circle-details-title">
+        <div id="circle-details-title-left">
+            <span class="circle-name">环境国际旅游社</span>
+            <div>
+                <span>圈号：1235458</span>
+                <span  class="circle-label">牛人圈</span>
+                <span  class="circle-label">文艺圈</span>
+                <span  class="circle-label">娱乐圈</span>
+            </div>
+        </div>
+        <div id="circle-details-title-right"><img class="right-enter" src="../../images/right-back@2x.png" alt=""/></div>
+    </div>
+
+
+    <div id="circle-details-member">
+        <div>
+            <span>圈成员</span>
+            <div>
+                <span  class="circle-details-text">1人</span>
+                <img class="right-enter" src="../../images/right-back@2x.png" alt=""/>
+            </div>
+        </div>
+        <div class="circle-details-member-pic">
+            <img src="../../images/header_icon.jpg" alt=""/>
+            <span>圈主</span>
+        </div>
+        <div class="circle-details-member-pic">
+            <img src="../../images/header_icon.jpg" alt=""/>
+            <span>圈主</span>
+        </div>
+    </div>
+
+    <ul id="circle-details-list">
+        <li><span>圈公告</span><img class="right-enter" src="../../images/right-back@2x.png" alt=""/></li>
+        <textarea class="grouper-details-value"  style="overflow-y:hidden;resize: none; height:20px;"
+                  onpropertychange="this.style.height=this.scrollHeight + 'px'"
+                  oninput="this.style.height=this.scrollHeight + 'px'">
+        </textarea>
+        <div class="divider-line"></div>
+        <li id="circle-details-intro"><span>介绍</span><img class="right-enter" src="../../images/right-back@2x.png" alt=""/></li>
+        <textarea id="circle-details-intro-value" readonly class="grouper-details-value" style="overflow-y:hidden;resize: none; height:20px;"
+                  onpropertychange="this.style.height=this.scrollHeight + 'px'"
+                  oninput="this.style.height=this.scrollHeight + 'px'">
+        </textarea>
+        <li id="S-canvas">
+            <span id="circle-attr">圈属性</span>
+            <div>
+                <canvas class="S-canvas" data-opt='{"lineColor":"#b182aa","num":"100","totalnum":"300","quantifier":"人"}' width="80" height="80"></canvas>
+                <canvas class="S-canvas" data-opt='{"lineColor":"#f3b32a","num":"250","totalnum":"300","quantifier":"条"}' width="80" height="80"></canvas>
+                <canvas class="S-canvas" data-opt='{"lineColor":"#7af1f0","num":"35","totalnum":"300","quantifier":"岁"}' width="80" height="80"></canvas>
+                <canvas class="S-canvas" data-opt='{"lineColor":"#fc65a5","num":"56","totalnum":"300","quantifier":"人"}' width="80" height="80"></canvas>
+            </div>
+            <div id="S-canvas-info">
+                <span class="circle-details-text">昨日消息</span>
+                <span class="circle-details-text">活跃成员</span>
+                <span class="circle-details-text">平均年龄</span>
+                <span class="circle-details-text">女生人数</span>
+            </div>
+        </li>
+        <div class="divider-line"></div>
+        <li>
+            <span>圈相册</span>
+            <div>
+                <span class="circle-details-text">更多</span>
+                <img class="right-enter" src="../../images/right-back@2x.png" alt=""/>
+            </div>
+        </li>
+    </ul>
+    </div>
+</section>
+</body>
+<script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../../scripts/circle-details.js"></script>
+</html>
