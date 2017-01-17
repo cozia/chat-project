@@ -1,0 +1,35 @@
+//
+$header-line-color:#cccccc;
+$header-background:#f7f7f7;
+$content-line-color:#e0e0e0;
+$content-background:#f2f2f2;
+$header-height:38px;
+$list-height-a:70px;
+$list-height-b:44px;
+$yellow:#fe8d00;
+
+form{
+  height: 100%;
+}
+
+#circle-album-container{
+
+  background: $content-background;
+  #circle-album-bg{
+    background: url("../../images/circle-album.png");
+    background-size: cover;
+    height: 175px;
+    position: relative;
+    #circle-album-name{
+      color: #ffffff;
+      position: absolute;
+      left: 12px;
+      bottom: 12px;
+    }
+  }
+  .album{
+    box-sizing: border-box;
+    padding: 12px;
+    margin-bottom: 5px;
+  }
+}

@@ -305,7 +305,7 @@ CircleShow.init();
 /////delete-member.html
 
 $(function(){
-        $('#delete-member-list>li').click(function(){
+        $('#add-manager-list>li').click(function(){
             var $checkedNum;
             var $pretendCheckbox=$(this).find('.pretend-checkbox-none');
             var $ckBox=$(this).find('input[type="checkbox"]');
@@ -319,10 +319,104 @@ $(function(){
             }
             $checkedNum=$('.pretend-checkbox-checked').length;
             if($checkedNum>0){
-                $delBtn.removeAttr('disabled').css('color','#e64240').text('删除('+$checkedNum+'人)');
+                $delBtn.removeAttr('disabled').css('color','#0de44e').text('提升管理('+$checkedNum+')');
             }else{
                 $delBtn.text('删除').css('color','#fe8d00');
                 console.log('请选择至少一个成员！');
             }
         })
 });
+
+
+$(function(){
+    $('#delete-member-list>li').click(function(){
+        var $checkedNum;
+        var $pretendCheckbox=$(this).find('.pretend-checkbox-none');
+        var $ckBox=$(this).find('input[type="checkbox"]');
+        var $delBtn=$('.com-header>button');
+        if(!$ckBox[0].checked){
+            $pretendCheckbox.addClass('pretend-checkbox-checked');
+            $ckBox.attr('checked','checked');
+        }else{
+            $pretendCheckbox.removeClass(('pretend-checkbox-checked'));
+            $ckBox.removeAttr('checked');
+        }
+        $checkedNum=$('.pretend-checkbox-checked').length;
+        if($checkedNum>0){
+            $delBtn.removeAttr('disabled').css('color','#e64240').text('删除('+$checkedNum+'人)');
+        }else{
+            $delBtn.text('删除').css('color','#fe8d00');
+            console.log('请选择至少一个成员！');
+        }
+    })
+});
+
+
+
+
+
+//circle-album
+
+;(function(win,$,undefined){
+    function Album(album){
+        //相册容器属性
+        this.container=album;
+        //相册数据
+        this.options=$.parseJSON(this.container.attr('data-album'));
+        //将相册数据中的用“，”连接的字符串转化成数组
+        var urls=this.options.album_pic.split(',');
+        this.options.album_pic=urls;
+//        console.log(this.options);
+        //将相册数据中的毫秒数转化为本地时间
+        this.time=new Date(Number(this.options.timestamp)).toLocaleString();
+        //渲染相册
+        this.renderAlbum();
+    }
+
+    //实例化多个相册类  静态方法
+    Album.init=function(){
+        var _this_=this;
+        $('.album').each(function(){
+            new _this_($(this))
+        })
+    }
+    Album.prototype={
+        contructor:Album,
+        renderAlbum:function(){
+            //将相册数据缓存到局部变量
+            var cfg=this.options;
+            var img_='';
+            //得到相册数据中的图片url长度
+            var imgLen=this.options.album_pic.length;
+            //依据图片长度生成img标签
+            for(var i=0;i<imgLen;i++){
+                img_+='<img src=" '+this.options.album_pic[i]+' "/>';
+            }
+            //相册单个模板里面的右边模板
+            var $album_item_right_item=$("<div class='album_item_right_item_name'>" +cfg.username+ "</div><div class='album_item_right_item_artcle'>" +cfg.album_text+ "</div><div class='circle_pic_box'></div><span class='album_item_right_item_timestamp'>"+ this.time +"</span>");
+            //相册单个模板
+            var $album_item=$("<div class='album_item_left'><img src='"+cfg.portrait+"'/></div><div class='album_item_right'></div>");
+            this.container.css({'height':'auto','background':'#ffffff','boxSizing':'border-box','padding':'12px','display':'flex',
+                                'flexDirection':'row','justfyContent':'space-between'}).append($album_item);
+            this.container.find('.album_item_left').css({'marginRight':12}).find('img').css('width',42);
+            this.container.find('.album_item_right').append($album_item_right_item);
+            this.container.find('.circle_pic_box').append($(img_));
+            this.container.find('.album_item_right img').css({'width':80,'height':80,'marginRight':4});
+            $('.album_item_right_item_name').css({'fontSize':'15px','color':'#4c6093','marginBottom':'10px'});
+            $('.album_item_right_item_artcle').css({'fontSize':'14px','color':'#000000','marginBottom':'10px'});
+            $('.album_item_right_item_timestamp').css({'fontSize':'12px','color':'#999999','marginBottom':'10px','display':'block','height':'20px','lineHeight':'20px'});
+        }
+    }
+    win['Album']=Album;
+})(window,jQuery)
+
+Album.init();
+
+
+
+//release-album
+$(function(){
+    $('#upload-icon').click(function(){
+        $('.upload-img-box input[type="file"]').trigger('click')
+    })
+})

@@ -1,28 +1,73 @@
 /*
 circle-member-edit-header page stylesheets
 */
-#current-manager-list li {
-  height: 50px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  box-sizing: border-box;
-  padding: 0 12px; }
-  #current-manager-list li .current-manager-list-left {
-    display: flex;
-    flex-direction: row;
-    align-items: center; }
-  #current-manager-list li img {
-    height: 30px;
-    width: 30px; }
-  #current-manager-list li button {
-    width: 60px;
-    height: 25px;
-    background: #e64260;
-    color: #ffffff;
-    border: none;
-    font-size: 12px;
-    border-radius: 3px; }
+form {
+  height: 100%;
+  background: #f2f2f2; }
+  form #add-manager-container {
+    height: 100%; }
+    form #add-manager-container .add-manager-title {
+      height: 30px;
+      box-sizing: border-box;
+      padding: 0 12px;
+      font-size: 14px;
+      line-height: 30px;
+      color: #666666; }
+    form #add-manager-container #current-manager-list li {
+      height: 50px;
+      display: flex;
+      background: #ffffff;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      box-sizing: border-box;
+      padding: 0 12px;
+      line-height: 20px; }
+      form #add-manager-container #current-manager-list li .current-manager-list-left {
+        display: flex;
+        flex-direction: row;
+        align-items: center; }
+      form #add-manager-container #current-manager-list li img {
+        height: 30px;
+        width: 30px;
+        margin-right: 12px; }
+      form #add-manager-container #current-manager-list li button {
+        width: 60px;
+        height: 25px;
+        background: #e64260;
+        color: #ffffff;
+        border: none;
+        font-size: 12px;
+        border-radius: 3px; }
+    form #add-manager-container #add-manager-list li {
+      position: relative;
+      height: 50px;
+      box-sizing: border-box;
+      padding: 0 12px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      background: #ffffff; }
+      form #add-manager-container #add-manager-list li .pretend-checkbox-none {
+        position: relative;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 1px #cccccc solid;
+        margin-right: 16px; }
+      form #add-manager-container #add-manager-list li .pretend-checkbox-checked {
+        background: #0de44e; }
+      form #add-manager-container #add-manager-list li input[type='checkbox'] {
+        display: none; }
+      form #add-manager-container #add-manager-list li img {
+        width: 35px;
+        height: 35px;
+        margin-right: 16px;
+        position: relative;
+        top: 2px; }
+      form #add-manager-container #add-manager-list li label {
+        font-size: 15px;
+        color: #333333; }
 
 /*# sourceMappingURL=add-manager.css.map */

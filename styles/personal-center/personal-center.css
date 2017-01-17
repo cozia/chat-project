@@ -1,0 +1,40 @@
+#personal-center-container {
+  height: 100%; }
+  #personal-center-container #personal-center-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px 0; }
+    #personal-center-container #personal-center-header div {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-bottom: 12px; }
+  #personal-center-container #personal-center-body {
+    padding: 0 12px; }
+    #personal-center-container #personal-center-body #divider {
+      margin-bottom: 50px; }
+    #personal-center-container #personal-center-body li {
+      border-bottom: 1px solid #CCCCCC;
+      height: 44px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center; }
+      #personal-center-container #personal-center-body li .personal-center-left img {
+        position: relative;
+        top: 3px;
+        width: 19px;
+        height: 19px;
+        margin-right: 12px; }
+      #personal-center-container #personal-center-body li .personal-center-left span {
+        display: inline-block;
+        height: 44px;
+        line-height: 44px;
+        color: #999999; }
+      #personal-center-container #personal-center-body li .personal-center-right {
+        width: 8px;
+        height: 14px; }
+
+/*# sourceMappingURL=personal-center.css.map */
